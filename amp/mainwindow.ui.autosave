@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1444</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ampliphy Control Tool V0,1</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget_logo" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(87, 138, 225)</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>30</y>
+         <width>831</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ampliphy Control Tool V0.1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>54</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Logo1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>1060</x>
+         <y>30</y>
+         <width>54</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Logo2</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_main" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>5</width>
+        <height>5</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(254, 255, 200)</string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_General_Settings">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>321</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QGroupBox {
+    border: 2px solid rgb(189, 184, 167);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+QGroupBox::title {
+	
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 1px;
+    background-color:rgb(254, 255, 200);
+    position: relative;
+    top: 15px;
+    margin-top: -2px;
+ margin-left: -30px;
+	color:rgb(248, 93, 33);
+}
+
+</string>
+       </property>
+       <property name="title">
+        <string>General Settings</string>
+       </property>
+       <widget class="QGroupBox" name="groupBox_General_Settings_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>260</y>
+          <width>321</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QGroupBox {
+    border: 2px solid rgb(189, 184, 167);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+QGroupBox::title {
+	
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 1px;
+    background-color:rgb(254, 255, 200);
+    position: relative;
+    top: 15px;
+    margin-top: -2px;
+ margin-left: -30px;
+	color:rgb(248, 93, 33);
+}
+
+</string>
+        </property>
+        <property name="title">
+         <string>General Settings</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>14</x>
+           <y>86</y>
+           <width>291</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QPushButton" name="pushButton_password_5">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+QPushButton#pushButton_password { 
+ border: 1px solid rgb(45, 82, 130);
+background-color:rgb(247, 248, 243);
+  border-radius: 2px;
+}</string>
+              </property>
+              <property name="text">
+               <string>Password</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_registerMap_5">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+QPushButton#pushButton_registerMap { 
+ border: 1px solid rgb(45, 82, 130);
+background-color:rgb(247, 248, 243);
+  border-radius: 2px;
+}</string>
+              </property>
+              <property name="text">
+               <string>RegisterMap</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QLabel" name="label_daseting_5">
+              <property name="text">
+               <string>Device Address Setting:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_deiceaddress_5">
+              <property name="styleSheet">
+               <string notr="true">QComboBox #comboBox_deiceaddress {
+Border: 2px rgb(179, 172, 160);
+}</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>A0/A2</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>14</x>
+          <y>86</y>
+          <width>291</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_password">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+QPushButton#pushButton_password { 
+ border: 1px solid rgb(45, 82, 130);
+background-color:rgb(247, 248, 243);
+  border-radius: 2px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Password</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_registerMap">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+QPushButton#pushButton_registerMap { 
+ border: 1px solid rgb(45, 82, 130);
+background-color:rgb(247, 248, 243);
+  border-radius: 2px;
+}</string>
+             </property>
+             <property name="text">
+              <string>RegisterMap</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_daseting">
+             <property name="text">
+              <string>Device Address Setting:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_deiceaddress">
+             <property name="styleSheet">
+              <string notr="true">QComboBox #comboBox_deiceaddress {
+Border: 2px rgb(179, 172, 160);
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>A0/A2</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <zorder>layoutWidget</zorder>
+       <zorder>groupBox_General_Settings_2</zorder>
+      </widget>
+      <widget class="QFrame" name="frame">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>301</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="pushButton_connect">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#pushButton_connect {
+    border: 1px solid rgb(45, 82, 130);
+    background-color: rgb(247, 248, 243);
+    border-radius: 2px;
+    position: relative;
+}
+
+QPushButton#pushButton_connect:focus {
+    outline: none;
+}
+
+QPushButton#pushButton_connect:focus:pressed {
+    outline: 1px dotted black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_led">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>10</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>10</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>10</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton#pushButton_led {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 white, stop:0.1 white, stop:0.9 rgb(132, 131, 148), stop:1 rgb(132, 131, 148));
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+	position: absolute;
+ 
+}
+
+QPushButton#pushButton_led:checked {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 white, stop:0.1 white, stop:0.9 rgb(37, 167, 0), stop:1 rgb(37, 167, 0));
+    border: 2px solid rgba(37, 167, 0, 0.5);
+ width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  
+}
+
+QPushButton#pushButton_led:checked:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 white, stop:0.1 white, stop:0.9 rgb(132, 131, 148), stop:1 rgb(132, 131, 148));
+ width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>5</width>
+          <height>5</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_loadDefaultValue">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>10</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+
+QPushButton#pushButton_loadDefaultValue { 
+ border: 1px solid rgb(45, 82, 130);
+background-color:rgb(247, 248, 243);
+  border-radius: 2px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Load Default Value</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_A0_Settings">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>311</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QGroupBox {
+    border: 2px solid rgb(189, 184, 167);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+QGroupBox::title {
+	
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 1px;
+    background-color:rgb(254, 255, 200);
+    position: relative;
+    top: 15px;
+    margin-top: -2px;
+ margin-left: -30px;
+	color:rgb(248, 93, 33);
+}
+
+</string>
+       </property>
+       <property name="title">
+        <string>A0Settings</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_a0_settings">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>220</y>
+          <width>161</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#pushButton_a0_settings {
+    border: 1px solid rgb(45, 82, 130);
+    background-color: rgb(247, 248, 243);
+    border-radius: 2px;
+    position: relative;
+}
+
+QPushButton#pushButton_a0_settings:focus {
+    outline: none;
+}
+
+QPushButton#pushButton_a0_settings:focus:pressed {
+    outline: 1px dotted black;
+}</string>
+        </property>
+        <property name="text">
+         <string>A0 Setting</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>31</y>
+          <width>281</width>
+          <height>182</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Vendor:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="text">
+              <string>TMTech</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>PN:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="text">
+              <string>CT-1212TET-HF5CD</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>SN:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_3">
+             <property name="text">
+              <string>CL0023J15S0002</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Date:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_4">
+             <property name="text">
+              <string>160126</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Bit Rate:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_5">
+             <property name="text">
+              <string>1250M</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Wavelength:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_6">
+             <property name="text">
+              <string>1310nm</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_limiting_amplifier_settings">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>470</y>
+         <width>311</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QGroupBox {
+    border: 2px solid rgb(189, 184, 167);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+QGroupBox::title {
+	
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 1px;
+    background-color:rgb(254, 255, 200);
+    position: relative;
+    top: 15px;
+    margin-top: -2px;
+ margin-left: -30px;
+	color:rgb(248, 93, 33);
+}
+
+</string>
+       </property>
+       <property name="title">
+        <string>Limiting Amplifier Settings</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_gain">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>60</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#pushButton_gain{
+    border: none;
+}
+
+QPushButton#pushButton_gain::indicator {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent #ffffff transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
